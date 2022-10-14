@@ -1,3 +1,19 @@
 <resources>
-  <string name="app_name">Dice Games</string>
+  <string name="zero">0</string>
+  <string name="app_name">Dice Game</string>
+  <string name="My_name">Hello,Sandeep! </string>
+  <string name="textview">TextView</string>
+  <string name="name">Name</string>
+  <string name="Instruction">You earn 5 coins every time you roll a die</string>
+  <string name="Dice_Number">0</string>
+  <string name="toast">Congratulations!</string>
+  <string name="Ins">If you roll two sixes in a row,
+    you will get 10 coins! But if you roll any other number in a row, you lose 5 coins!
+  </string>
+  <string name="Click">Click the Dice to roll</string>
+  <string name="previous_roll">previous roll:</string>
+  <string name="total_dice_rolls">Total Dice Rolls:</string>
+  <string name="sixes_rolled">Sixes rolled :</string>
+  <string name="double_sixes">Double Sixes:</string>
+  <string name="double_others">Double Others</string>
 </resources>

@@ -4,15 +4,195 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".WalletActivity">
 
+
   <TextView
+      android:id="@+id/textView3"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Hello World!"
-      app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_marginTop="60dp"
+      android:text="@string/Click"
+      android:textColor="#757575"
+      android:textSize="16sp"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
+  <Button
+      android:id="@+id/btn"
+      android:layout_width="146dp"
+      android:layout_height="154dp"
+      android:layout_marginBottom="252dp"
+      android:shadowColor="#7733EF"
+      android:text="@string/Dice_Number"
+      android:textColor="#2DFB09"
+      android:textSize="100sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.509"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:ignore="DuplicateSpeakableTextCheck" />
+
+  <TextView
+      android:id="@+id/textView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="96dp"
+      android:text="@string/Instruction"
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/bal"
+      android:layout_width="29dp"
+      android:layout_height="26dp"
+      android:layout_marginTop="40dp"
+      android:text="0"
+      android:textAlignment="center"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.587"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <TextView
+      android:id="@+id/coins"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="132dp"
+      android:layout_marginTop="40dp"
+
+      android:text="Coins"
+      android:textSize="18sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <TextView
+      android:id="@+id/totalsixes"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="60dp"
+      android:layout_marginBottom="164dp"
+      android:text="Sixes rolled :"
+      android:textColor="#757575"
+      android:textSize="15sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+      android:id="@+id/tdr"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="68dp"
+      android:layout_marginEnd="56dp"
+      android:text="Total Dice Rolls:"
+      android:textSize="15sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+  <TextView
+      android:id="@+id/ds"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="60dp"
+      android:layout_marginTop="45dp"
+      android:text="Double Sixes:"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/totalsixes"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/dothers"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="4dp"
+      android:layout_marginTop="40dp"
+      android:text="Double Others"
+      app:layout_constraintStart_toStartOf="@+id/tdr"
+      app:layout_constraintTop_toBottomOf="@+id/tdr" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      android:includeFontPadding="true"
+      android:paddingStart="20dp"
+      android:paddingEnd="10dp"
+      android:text="@string/Ins"
+      android:textAlignment="center"
+      android:textColor="#F3231212"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+  <TextView
+      android:id="@+id/prev"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="18dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="13dp"
+      android:text="previous roll:"
+      android:textColor="#190101"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toStartOf="@+id/prevroll"
+      app:layout_constraintHorizontal_chainStyle="packed"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+  <TextView
+      android:id="@+id/single_sixes"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="2dp"
+      android:text="@string/zero"
+      app:layout_constraintStart_toEndOf="@+id/totalsixes"
+      app:layout_constraintTop_toTopOf="@+id/totalsixes" />
+
+  <TextView
+      android:id="@+id/tdr1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="2dp"
+      android:text="@string/zero"
+      app:layout_constraintBaseline_toBaselineOf="@+id/tdr"
+      app:layout_constraintStart_toEndOf="@+id/tdr" />
+
+  <TextView
+      android:id="@+id/double_sixes"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="7dp"
+      android:text="@string/zero"
+      app:layout_constraintBaseline_toBaselineOf="@+id/ds"
+      app:layout_constraintStart_toEndOf="@+id/ds" />
+
+  <TextView
+      android:id="@+id/double_others"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="9dp"
+      android:layout_marginTop="1dp"
+      android:text="@string/zero"
+      app:layout_constraintStart_toEndOf="@+id/dothers"
+      app:layout_constraintTop_toTopOf="@+id/dothers" />
+
+  <TextView
+      android:id="@+id/prevroll"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/zero"
+      app:layout_constraintBaseline_toBaselineOf="@+id/prev"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/prev" />
 </androidx.constraintlayout.widget.ConstraintLayout>
